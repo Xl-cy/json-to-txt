@@ -5,9 +5,9 @@ class BDD_to_YOLOv5:
         self.writepath = "C:/Users/10604/Desktop/dataset/bdd100k/labels_txt/val/" #写入路径，txt文件存放路径
         self.bdd100k_width_ratio = 1.0 / 1280
         self.bdd100k_height_ratio = 1.0 / 720
-        self.select_categorys = ["person", "rider", "car", "bus", "truck", "bike","motor"]
+        self.select_categorys = ["car", "bus", "truck", "bike","motor"]
         self.categorys_nums = {
-            "person": 0,"rider": 1,"car": 2,"bus": 3,"truck": 4,"bike": 5,"motor": 6,
+            "car": 0,"bus": 1,"truck": 2,"bike": 3,"motor": 4
         }
     def bdd_to_yolov5(self, path):
         lines = ""
